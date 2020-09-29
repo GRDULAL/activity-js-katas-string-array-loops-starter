@@ -20,3 +20,25 @@
 */
 
 // YOUR CODE HERE
+let word = "phunsholingbhutan"
+let letter = "h"
+let lettercount = 0;
+
+let index = 0;
+ while (index < word.length) {
+   //console.log(word[index])
+   if (letter === word[index]) {
+      lettercount = lettercount + 1;
+   }
+   index = index + 1
+}
+
+//console.log(lettercount)
+
+if (lettercount > 0) {
+   console.log("the letter \""+ letter + " \" exist " + lettercount + "times in this word");
+
+}
+else {
+   console.log("letter not found")
+}
